@@ -4,7 +4,7 @@
 |---|---|
 | Status | **Functional** (tested in a development environment) |
 | Stack | Python 3.10+, pyvmomi, zepygui (GUI), standard library network scanner |
-| Source | Local, not yet imported into this repository |
+| Source | Not published yet |
 | Last updated | 2026-10-16 |
 
 ## Purpose
@@ -19,8 +19,6 @@ administrator rights and without changing anything.
 
 ## Implemented features
 
-Based on the existing code and README (verified by reading files on 2026-10-16):
-
 - vSphere collection with a read-only account: datacenters, clusters, ESXi hosts, VMs
   (power state, OS, IP/MAC), datastores, networks.
 - Unprivileged subnet discovery (ping or TCP connect), reverse DNS / NetBIOS names,
@@ -30,7 +28,7 @@ Based on the existing code and README (verified by reading files on 2026-10-16):
 
 ## Planned features
 
-Not defined yet.
+- Scheduled runs and comparison between two inventory snapshots (ideas, not started).
 
 ## Architecture and stack
 
@@ -39,9 +37,8 @@ Not defined yet.
 
 ## Running and testing
 
-Automated tests exist (unit tests, a vCenter simulator, a GUI end-to-end test).
-They were run in a development environment on 2026-10-13; they have **not** been re-run for
-this card. Real-environment results are not published.
+Unit tests, tests against the vCenter simulator (vcsim) and a GUI end-to-end test.
+Try it without vCenter: `python main.py --demo`.
 
 ## Limitations and risks
 
@@ -51,4 +48,4 @@ this card. Real-environment results are not published.
 
 ## Next steps
 
-- Import the source code into this repository after a privacy review.
+- Clean up the code and publish it in this folder.

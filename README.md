@@ -1,7 +1,7 @@
 # Projects & Automation
 
 Personal projects and automation for infrastructure administration.
-Every project has an explicit status. Planned features are never described as implemented.
+Each project has a status, so it is clear what already works and what is still an idea.
 
 **Status legend:** Planned · In Development · Experimental · Functional · Archived
 
@@ -19,5 +19,5 @@ New projects start from [templates/PROJECT-CARD-TEMPLATE.md](templates/PROJECT-C
 ## Safety principles
 
 - Tools are read-only by default and need only least-privilege accounts.
-- No real inventory data, scan results, hostnames or addresses are committed — only demo data.
+- No real inventory data, scan results, hostnames or addresses are committed - only demo data.
 - Tools are run only against systems I am authorised to use.

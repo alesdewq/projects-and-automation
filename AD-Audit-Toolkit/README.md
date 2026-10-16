@@ -4,7 +4,7 @@
 |---|---|
 | Status | **Experimental** (collector exists, audit checks do not) |
 | Stack | Python 3.10+, ldap3, tkinter |
-| Source | Local, not yet imported |
+| Source | Not published yet |
 | Last updated | 2026-10-16 |
 
 ## Purpose
@@ -18,7 +18,7 @@ Gives a documented snapshot of the domain structure that can be reviewed and com
 
 ## Implemented features
 
-Collector (verified by reading the existing code and README on 2026-10-16):
+Collector:
 
 - Connects as a regular domain user (no admin rights): LDAPS → StartTLS → NTLM fallback,
   never sends a cleartext password unless explicitly chosen.
@@ -38,15 +38,15 @@ a Samba AD container.
 
 ## Running and testing
 
-Tests exist and were run in a development environment on 2026-10-13 (not re-run for this card).
-Real-environment results are not published.
+Tests use a fake AD server and a Samba AD container.
+Try it without a domain: `python main.py --demo`.
 
 ## Limitations and risks
 
-- The JSON contains personal data and internal names — never commit real exports.
+- The JSON contains personal data and internal names - never commit real exports.
 - Run only against domains you are authorised to query.
 
 ## Next steps
 
-- Import the source code into this repository after a privacy review.
+- Clean up the code and publish it in this folder.
 - Define the first 3–5 audit checks.

@@ -12,7 +12,7 @@
 
 ## Implemented features
 
-Only features that exist in code and were checked. If none — write "None yet".
+Only features that exist in code and were checked. If none - write "None yet".
 
 ## Planned features
 
