@@ -1,41 +1,13 @@
 # PowerShell Admin Toolkit
 
-| Field | Value |
-|---|---|
-| Status | **Planned** |
-| Stack | PowerShell |
-| Last updated | 2026-10-16 |
+**Status:** Planned · **Stack:** PowerShell
 
-## Purpose
+Small PowerShell scripts for routine Windows Server and Active Directory tasks.
 
-Collection of administrative PowerShell scripts for routine Windows Server and Active Directory tasks.
+## Ideas
 
-## Problem it solves
+- Scripts with `-WhatIf` support for anything that changes a system
+- Short help and an example run for every script
 
-Routine administrative work that is repeated by hand and is easy to get wrong.
-
-## Implemented features
-
-None yet.
-
-## Planned features
-
-Scope is not fixed yet. The project will start with 2–3 small, well-documented items
-rather than a large set.
-
-## Architecture and stack
-
-PowerShell. Each item gets a short description, parameters, an example run and safety notes.
-
-## Running and testing
-
-Not applicable yet. Items will be tested only in a lab environment.
-
-## Limitations and risks
-
-- No real hostnames, domains, addresses or credentials in code or examples.
-- Anything that changes systems must support a dry-run / WhatIf mode.
-
-## Next steps
-
-- Choose the first items and implement them in a lab.
+Nothing is implemented yet. Everything will be tested in a lab first, with no real hostnames,
+addresses or credentials in the code or examples.
