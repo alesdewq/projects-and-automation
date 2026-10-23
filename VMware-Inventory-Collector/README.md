@@ -4,8 +4,8 @@
 |---|---|
 | Status | **Functional** (tested in a development environment) |
 | Stack | Python 3.10+, pyvmomi, zepygui (GUI), standard library network scanner |
-| Source | Not published yet |
-| Last updated | 2026-10-16 |
+| Source | [src/](src/) (documentation in Russian: [src/README.md](src/README.md)) |
+| Last updated | 2026-10-23 |
 
 ## Purpose
 
@@ -37,6 +37,15 @@ administrator rights and without changing anything.
 
 ## Running and testing
 
+```bash
+cd src
+python -m venv .venv && . .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+Last local run (2026-10-23): 24 passed, 5 skipped (vcsim / GUI tests need extra tooling).
+
 Unit tests, tests against the vCenter simulator (vcsim) and a GUI end-to-end test.
 Try it without vCenter: `python main.py --demo`.
 
@@ -48,4 +57,3 @@ Try it without vCenter: `python main.py --demo`.
 
 ## Next steps
 
-- Clean up the code and publish it in this folder.

@@ -4,8 +4,8 @@
 |---|---|
 | Status | **Experimental** (collector exists, audit checks do not) |
 | Stack | Python 3.10+, ldap3, tkinter |
-| Source | Not published yet |
-| Last updated | 2026-10-16 |
+| Source | [src/](src/) (documentation in Russian: [src/README.md](src/README.md)) |
+| Last updated | 2026-10-23 |
 
 ## Purpose
 
@@ -38,6 +38,15 @@ a Samba AD container.
 
 ## Running and testing
 
+```bash
+cd src
+python -m venv .venv && . .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python -m unittest discover -s tests -p 'test_*.py'
+```
+
+Last local run (2026-10-23): 27 passed, 2 skipped (Samba AD container tests).
+
 Tests use a fake AD server and a Samba AD container.
 Try it without a domain: `python main.py --demo`.
 
@@ -48,5 +57,4 @@ Try it without a domain: `python main.py --demo`.
 
 ## Next steps
 
-- Clean up the code and publish it in this folder.
 - Define the first 3–5 audit checks.
