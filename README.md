@@ -8,12 +8,11 @@ Each project has a status, so it is clear what already works and what is still a
 | Project | Status | Purpose |
 |---|---|---|
 | [NEXORA](https://github.com/alesdewq/nexora) | Functional (v0.9.0 MVP) | Read-only Windows 10/11 diagnostics and security audit (C#/.NET, WPF) - separate repository |
-| [InfraScope](InfraScope/) | Planned | Read-only infrastructure inventory with configuration checks |
 | [VMware Inventory Collector](VMware-Inventory-Collector/) | Functional | Read-only vCenter and subnet inventory → JSON/CSV/Markdown |
 | [AD Audit Toolkit](AD-Audit-Toolkit/) | Experimental | Read-only Active Directory structure collection → JSON |
-| [PowerShell Admin Toolkit](PowerShell-Admin-Toolkit/) | Planned | Administrative PowerShell scripts |
-| [Infrastructure Health Check](Infrastructure-Health-Check/) | Planned | Set of infrastructure health checks |
-| [Ansible Automation](Ansible-Automation/) | Planned | Ansible playbooks for routine tasks |
+
+Ansible, Terraform and Packer work lives in the homelab repository:
+[homelab-infrastructure](https://github.com/alesdewq/homelab-infrastructure).
 
 New projects start from [templates/PROJECT-CARD-TEMPLATE.md](templates/PROJECT-CARD-TEMPLATE.md).
 
